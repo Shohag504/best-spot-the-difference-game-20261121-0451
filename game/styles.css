@@ -1,0 +1,95 @@
+/* Dhaka Days — page chrome: a dark frame around the canvas, a clear HUD
+   with big readable numbers, and buttons that work with mouse or touch. */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #0b1526;
+  color: #f1faee;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+#app {
+  width: 1280px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 10px 12px 8px;
+}
+
+#hud {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 6px 4px 12px;
+}
+
+.brand strong {
+  display: block;
+  font-size: 26px;
+  letter-spacing: 0.5px;
+  color: #ffd60a;
+}
+
+.brand span {
+  font-size: 13px;
+  color: #a8dadc;
+}
+
+.stat label {
+  display: block;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #a8dadc;
+}
+
+.stat span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.stat.hot span { color: #ff9770; }
+
+#hud-timer.low { color: #e63946; }
+
+.actions {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  font: inherit;
+  font-size: 15px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid #457b9d;
+  background: #1d3557;
+  color: #f1faee;
+  cursor: pointer;
+}
+
+button:hover { background: #2a4a73; }
+
+button.primary {
+  background: #ffd60a;
+  border-color: #ffd60a;
+  color: #1d3557;
+  font-weight: 700;
+}
+
+#game {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  background: #0b1526;
+}
+
+footer {
+  padding-top: 8px;
+  font-size: 13px;
+  color: #a8dadc;
+  text-align: center;
+}
